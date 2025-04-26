@@ -14,7 +14,7 @@
 <!--    <div class="max-w-screen-md mb-8 lg:mb-16 flex flex-col justify-center mx-auto">-->
     <div class="max-w-screen-md flex flex-col justify-center mx-auto">
       {{ with $title }}
-      <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{.}}</h2>
+      <h2 class="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white text-center">{{.}}</h2>
       {{ end }}
       {{ with $text }}
       <p class="text-gray-500 sm:text-xl dark:text-gray-400 text-center">{{.}}</p>
@@ -28,7 +28,7 @@
             {{ partial "functions/get_icon" (dict "name" . "attributes" `class="w-5 h-5 lg:w-6 lg:h-6"`)  }}
           </div>
           {{ end }}
-          <h3 class="mb-2 text-xl font-bold dark:text-white">{{ .name | $page.RenderString }}</h3>
+          <h3 class="text-xl font-bold dark:text-white">{{ .name | $page.RenderString }}</h3>
           <p class="text-gray-500 dark:text-gray-400">{{ .description | $page.RenderString }}</p>
         </div>
       {{ end }}
